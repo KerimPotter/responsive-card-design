@@ -8,6 +8,6 @@ const button = `<button class="button">
 </a>
 </button>`;
 
-for (let i = 0; i < 21; i++) {
+for (let i = 0; i < 20; i++) {
   buttonContainer.innerHTML += button;
 };

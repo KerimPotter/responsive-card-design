@@ -1,4 +1,19 @@
+:root {
+  --bg-color: #e4d9ff;
+  --font-color: #000000;
+  --card-border: #b5b0da;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #262a32;
+    --font-color: #fafaff;
+    --card-border: #273469;
+  }
+}
+
 * {
+  color: var(--font-color) !important;
   margin: 0;
   padding: 0;
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
@@ -9,10 +24,10 @@
 html,
 body {
   width: 100%;
-  background-color: #e4d9ff;
+  background-color: var(--bg-color);
 }
 
-.buttonContainer {
+.container {
   height: auto;
   max-width: 1024px;
   width: 100%;
@@ -22,16 +37,15 @@ body {
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
-
-  .button {
+  .card {
     margin: 32px;
     padding: 12px;
     width: 30vh;
-    border: 4px solid #b5b0da;
+    border: 4px solid var(--card-border);
     background-color: #8687b4;
     border-radius: 12px;
-    a {
-      color: #e4d9ff;
+    .wrapper {
+      color: var(--bg-color);
       text-decoration: none;
       font-size: 2.4vh;
     }
@@ -41,32 +55,9 @@ body {
       border: 0;
       margin: 5% 5%;
       padding: 0;
-      border-top: 2px solid #b5b0da;
-      border-bottom: 2px solid #b5b0da;
+      border-top: 2px solid var(--card-border);
+      border-bottom: 2px solid var(--card-border);
       border-radius: 9999px;
-    }
-    .button1 {
-      text-align: center;
-    }
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  * {
-    color: #fafaff !important;
-  }
-  html,
-  body {
-    background-color: #262a32;
-  }
-  .buttonContainer {
-    .button {
-      border: 4px solid #273469;
-      background-color: #1e2749;
-      hr {
-        border-top: 2px solid #273469;
-        border-bottom: 2px solid #273469;
-      }
     }
   }
 }

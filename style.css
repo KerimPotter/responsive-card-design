@@ -1,0 +1,75 @@
+:root {
+  --bg-color: #e4d9ff;
+  --font-color: #000000;
+  --card-border: #b5b0da;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #262a32;
+    --font-color: #fafaff;
+    --card-border: #273469;
+  }
+}
+
+* {
+  color: var(--font-color) !important;
+  margin: 0;
+  padding: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+html,
+body {
+  width: 100%;
+  background-color: var(--bg-color);
+}
+
+.container {
+  height: auto;
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .card {
+  margin: 32px;
+  padding: 12px;
+  width: 30vh;
+  border: 4px solid var(--card-border);
+  background-color: #8687b4;
+  border-radius: 12px;
+}
+
+.container .card .wrapper {
+  color: var(--bg-color);
+  text-decoration: none;
+  font-size: 2.4vh;
+}
+
+.container .card hr {
+  display: block;
+  height: 0px;
+  border: 0;
+  margin: 5% 5%;
+  padding: 0;
+  border-top: 2px solid var(--card-border);
+  border-bottom: 2px solid var(--card-border);
+  border-radius: 9999px;
+}
+/*# sourceMappingURL=style.css.map */

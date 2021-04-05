@@ -1,13 +1,16 @@
-const buttonContainer = document.querySelector(".buttonContainer");
+const container = document.querySelector(".container");
 
-const button = `<button class="button">
-<a href="#">
-  <div class="button1-1">Responsive Card Design</div>
-  <hr>
-  <div class="button1-2">This thing...</div>
-</a>
-</button>`;
+const card = `
+  <div class="card">
+    <div class="wrapper">
+      <div>Responsive Card Design</div>
+      <hr>
+      <div>This thing...</div>
+    </div>
+  </div>
+`;
+
 
 for (let i = 0; i < 20; i++) {
-  buttonContainer.innerHTML += button;
+  container.innerHTML += card;
 };

@@ -1,6 +1,6 @@
 # Responsive Card Design
 
-White Mode
+Light Mode
 
 ---
 
